@@ -31,7 +31,7 @@ The bot will be implemented using the following technologies:
 - Familiarity with text embeddings and vector databases
 - Knowledge of FastAPI and Docker (optional but recommended)
 
-We also follow 'learn as you do' motto so dont be afraid to pick up issues that intrest you but you dont understand a lot
+We also follow 'learn as you do' motto so dont be afraid to pick up issues that intrest you.
 
 ### Installation
 
