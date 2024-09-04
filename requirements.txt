@@ -1,0 +1,5 @@
+discord.py
+transformers
+torch
+chromadb
+fastapi[standard]
