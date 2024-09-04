@@ -6,6 +6,10 @@ Welcome to the RAG Discord Bot project! This document provides an overview of th
 
 The RAG (Retrieve and Generate) Discord Bot aims to enhance our Discord server by providing intelligent responses based on our discussions and general club information. The project will span a month and is designed to be manageable within that timeframe.
 
+
+![image](https://github.com/user-attachments/assets/175d2671-3920-461c-903c-d868dd7749ad)
+
+
 ### Use Cases
 
 1. **Transcript Querying**: The bot will be able to refer to the transcripts of our discussions and answer questions based on them.
