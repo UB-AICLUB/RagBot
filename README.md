@@ -1,4 +1,4 @@
-# RAG Discord Bot
+# RAG Discord bot
 
 Welcome to the RAG Discord Bot project! This document provides an overview of the project, its goals, and the technologies we'll be using.
 
