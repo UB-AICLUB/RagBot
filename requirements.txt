@@ -3,3 +3,5 @@ transformers
 torch
 chromadb
 fastapi[standard]
+youtube-transcript-api
+uvicorn
