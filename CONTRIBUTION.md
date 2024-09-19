@@ -78,13 +78,13 @@ Set up the environment and install dependencies as needed following the pattern 
 
 This will spin up all services, including the API and client components.
 
-### Set Up Global Linting and Formatting
+### Setting up Pre-Commit Hooks
 We use global linting and formatting rules across all modules. Make sure to follow them by running the linters and formatters from the root directory.
 
-Install the necessary global dependencies:
+After cloning the repository and installing dependencies from `requirements.txt`, make sure to install pre-commit hooks:
 
 ```bash
-pip install flake8 black
+pre-commit install
 ```
 
 To check for linting issues:
@@ -98,10 +98,15 @@ To automatically format code:
 black .
 ```
 
+To check all pre-commit issues
+```bash
+pre-commit run --all-files
+```
+
 Ensure you follow these rules before making a pull request.
 
 ### Run the Modules
-#### Running the API (FastAPI)
+#### Running the API server (FastAPI)
 
 To run the FastAPI server for the API module, navigate to the API directory and run:
 

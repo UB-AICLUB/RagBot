@@ -1,5 +1,5 @@
-from youtube_transcript_api import YouTubeTranscriptApi
 from model.models import YoutubeTransScriptModel
+from youtube_transcript_api import YouTubeTranscriptApi
 
 """
 This function fetches all the transcripts from the given video ID
@@ -7,6 +7,8 @@ This function fetches all the transcripts from the given video ID
 Args:
     video_id: ID of the video from which we want to fetch the transcript
 """
+
+
 def fetch_transcipt(video_id: str):
     transcripts = YouTubeTranscriptApi.get_transcript(video_id)
     transcript_object_list = []
