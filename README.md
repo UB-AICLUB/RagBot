@@ -57,7 +57,7 @@ During the first week of September, we will have an in-person discussion session
 
 ## Contributions
 
-Feel free to contribute to the project by submitting issues, suggestions, or pull requests. We encourage learning and collaboration throughout the development process. Please go through our [Contribution Guideline](./CONTRIBUTION.MD) before contributing in our code base.
+Feel free to contribute to the project by submitting issues, suggestions, or pull requests. We encourage learning and collaboration throughout the development process. Please go through our [Contribution Guideline](./CONTRIBUTION.md) before contributing in our code base.
 
 ## Contact
 
