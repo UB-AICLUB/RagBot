@@ -5,3 +5,4 @@ chromadb
 fastapi[standard]
 youtube-transcript-api
 uvicorn
+sentence_transformers
