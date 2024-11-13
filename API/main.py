@@ -1,29 +1,33 @@
 import uvicorn
 from fastapi import FastAPI
-from model.models import RememberModel
-from pydantic import BaseModel
 
-# import sentence_encoder
+from model.models import RememberModel, Query
+from utils.youtube_transcript import fetch_transcipt
+from utils.create_embedding import sentence_list
+
+from utils.db import *
 
 
 app = FastAPI()
 
 
-# TODO move this to models file
-class Query(BaseModel):
-    query: str
-
-
 @app.post("/remember")
-def remeber(remember_model: RememberModel):
-    # object_list = fetch_transcipt(rememberModel.video_id)
+def remeber(rememberModel: RememberModel):
+    object_list = fetch_transcipt(rememberModel.video_id)
 
     print("Transcript fetch successful")
 
-    # TODO: Iterating the objects to save data in ChromaDB
+    sentences, metadatas = sentence_list(object_list)
 
-    return {"message": "Task started successfully"}
-
+    for i, _ in enumerate(sentences):
+        try:
+            write(text=sentences[i], metadata=metadatas[i])
+        except Exception as e:
+            print(e)
+            return
+    
+    return {"message":"Task started successfully"}
+    
 
 @app.post("/ask")
 def ask():

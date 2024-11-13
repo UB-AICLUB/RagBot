@@ -18,3 +18,6 @@ class YoutubeTransScriptModel(BaseModel):
     text: str
     start: float
     duration: float
+
+class Query(BaseModel):
+    query: str
